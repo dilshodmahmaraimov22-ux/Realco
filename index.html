@@ -1,15 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realco - Find house for your family</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
 
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <span class="logo-icon"></span>
+        <span class="logo-text">Realco</span>
+      </a>
 
-    <script src="/main.js"></script>
+      <!-- NAV MENUS -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">Properties <span class="arrow">▼</span></a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link search-link"><span class="icon">🔍</span> Search</a></li>
+        </ul>
+      </nav>
+
+      <!-- HEADER ACTIONS -->
+      <div class="header-actions">
+        <a href="#" class="btn btn-outline cart-btn">
+          <span class="icon">🛍️</span> Cart
+        </a>
+        <a href="#" class="btn btn-primary">Find a property</a>
+
+        <!-- BURGER MENU BUTTON (MOBILE) -->
+        <button class="burger-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+          <span class="tag">Find your dream place</span>
+          <h1 class="hero-title">Find house for your family in minutes</h1>
+          <p class="hero-description">
+            Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus.
+          </p>
+          
+          <!-- SEARCH FORM -->
+          <form class="hero-search-form">
+            <div class="input-wrapper">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <button type="submit" class="btn btn-primary">Find property</button>
+          </form>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern interior design" class="hero-img">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
