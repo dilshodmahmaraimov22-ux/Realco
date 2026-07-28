@@ -522,14 +522,12 @@ ul {
 
 /*------------------------SECTION3----------------------*/
 
-/* PROPERTIES SECTION */
 .properties-section {
   padding: 100px 0;
   background-color: #f8f8f6;
   position: relative;
 }
 
-/* PROPERTIES GRID */
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -537,7 +535,6 @@ ul {
   margin-bottom: 48px;
 }
 
-/* PROPERTY CARD */
 .property-card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -619,7 +616,6 @@ ul {
   gap: 24px;
 }
 
-/* RESPONSIVE DESIGN FOR PROPERTIES */
 @media (max-width: 992px) {
   .properties-grid {
     grid-template-columns: repeat(2, 1fr);
