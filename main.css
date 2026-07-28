@@ -998,3 +998,156 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/*------------------------FOOTER----------------------*/
+
+.site-footer {
+  background-color: #ffffff;
+  padding-top: 80px;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.footer-brand {
+  flex: 0 0 180px;
+}
+
+.footer-links-group {
+  display: flex;
+  gap: 64px;
+}
+
+.footer-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: #666666;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #cd6847;
+}
+
+.footer-subscribe {
+  max-width: 340px;
+}
+
+.subscribe-text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.subscribe-form input:focus {
+  border-color: #cd6847;
+}
+
+.privacy-notice {
+  font-size: 12px;
+  color: #888888;
+}
+
+.privacy-notice a {
+  color: #555555;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #777777;
+}
+
+.copyright a {
+  color: #333333;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-links a {
+  color: #333333;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #cd6847;
+}
+
+@media (max-width: 992px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links-group {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-subscribe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-links-group {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
