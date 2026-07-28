@@ -404,7 +404,6 @@ ul {
 
 /*------------------------SECTION2----------------------*/
 
-/* PROCESS SECTION */
 .process-section {
   padding: 80px 0;
   background-color: #ffffff;
@@ -416,7 +415,6 @@ ul {
   gap: 64px;
 }
 
-/* PROCESS IMAGE */
 .process-image-wrapper {
   flex: 1;
   border-radius: 20px;
@@ -430,7 +428,6 @@ ul {
   display: block;
 }
 
-/* PROCESS CONTENT */
 .process-content {
   flex: 1;
 }
@@ -450,7 +447,6 @@ ul {
   margin-bottom: 40px;
 }
 
-/* FEATURES GRID */
 .process-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -475,7 +471,6 @@ ul {
   line-height: 1.5;
 }
 
-/* ACTIONS */
 .process-actions {
   display: flex;
   align-items: center;
@@ -500,7 +495,6 @@ ul {
   font-size: 18px;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
   .process-container {
     flex-direction: column;
