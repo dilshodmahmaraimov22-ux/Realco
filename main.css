@@ -521,3 +521,119 @@ ul {
 }
 
 /*------------------------SECTION3----------------------*/
+
+/* PROPERTIES SECTION */
+.properties-section {
+  padding: 100px 0;
+  background-color: #f8f8f6;
+  position: relative;
+}
+
+/* PROPERTIES GRID */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+/* PROPERTY CARD */
+.property-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06);
+}
+
+.card-image-wrapper {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.property-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.property-card:hover .property-img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.property-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.property-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #cd6847;
+  margin-bottom: 16px;
+}
+
+.property-location {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.property-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.property-details span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.properties-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* RESPONSIVE DESIGN FOR PROPERTIES */
+@media (max-width: 992px) {
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .properties-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
